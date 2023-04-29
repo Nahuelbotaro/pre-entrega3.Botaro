@@ -1,0 +1,51 @@
+.bg-footer {
+    background-color: $colorprincipal;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+.type-white {
+    color: $colorterciario;
+}
+
+.redes a i {
+    font-size: 25px;
+    text-align: center;
+    padding: 5px 10px;
+
+    .redes a i:hover {
+        transform: scale(1.5);
+        transition: all 1s ease;
+    }
+}
+}
+
+@media screen and (max-width:900px){
+    .cardindex{
+        height: 1000px;
+        width: 850px;
+    }
+    .bg-footer{
+        width: 850px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .cardindex{
+        width: 420px;
+        height: 1000px;
+    }
+    .bg-footer{
+        width: 400px;
+        height: 800px;
+    }
+    .df-header{
+        width: 400px;
+        height: 200px;
+    }
+    .df-ul li{
+        width: 200px;
+    }
+}
+

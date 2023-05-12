@@ -10,42 +10,16 @@ a :active {
   text-decoration: none;
   color: white; }
 
-.df-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #2c0808;
-  padding: 5px;
-  font-family: "Source Serif Pro", serif; }
-  .df-header .logo-img {
-    width: 150px; }
-  .df-header .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-    .df-header .logo .logo p {
-      margin: 10px;
-      font-family: "Source Serif Pro", serif; }
-  .df-header .df-ul {
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    list-style: none; }
-  .df-header .df-ul li {
-    text-decoration: none;
-    margin: 20px;
-    font-family: 'Source Serif Pro', serif; }
-  .df-header .CodoACodo {
-    font-size: 30px;
-    color: white;
-    font-family: 'Source Serif Pro', serif;
-    font-weight: 500; }
+.logo-img {
+  margin: 0px;
+  padding: 0px;
+  width: 100px;
+  height: 100px; }
 
 .cardindex {
   display: flex;
   flex-direction: column;
-  background-color: #2c0808;
+  background-color: #212529;
   background-image: url(../img/iphone2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -70,96 +44,427 @@ a :active {
     color: white; }
 
 .boton:hover {
-  background-color: #98b2bd; }
+  background-color: #75b3ce; }
 
-.df-main {
-  background-color: #98b2bd;
+.banner {
+  background-image: linear-gradient(100deg, #000000, #00000020), url(../img/razer.jpg);
+  height: 60rem;
   background-size: cover;
-  padding: 5%; }
-  .df-main .productos {
-    display: flex;
-    color: rgba(19, 18, 18, 0.897);
-    font-weight: 700;
-    font-size: 50px;
-    text-align: center;
-    justify-content: center;
-    font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 10px; }
+  background-position: center; }
 
-.container {
+.content-banner {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 25rem 0; }
+
+.content-banner p {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 500; }
+
+.content-banner h2 {
+  color: white;
+  font-size: 3.5 rem;
+  font-weight: 500;
+  line-height: 1.2; }
+
+.content-banner a {
+  margin-top: 2rem;
+  text-decoration: none;
+  color: white;
+  background-color: #75b3ce;
+  display: inline-block;
+  padding: 1rem 3rem;
+  text-decoration: uppercase;
+  border-radius: 10rem; }
+
+/*main content*/
+.heading-1 {
+  text-align: center;
+  font-weight: 500;
+  font-size: 3rem; }
+
+.main-content {
+  background-color: rgba(219, 106, 40, 0.308); }
+
+/*caracteristicas*/
+.container-features {
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 3rem; }
+
+.card-feature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem 0;
+  margin: 1rem 0; }
+
+.card-feature i {
+  font-size: 2rem;
+  color: #212529; }
+
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5; }
+
+.feature-content span {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: rgba(19, 18, 18, 0.897); }
+
+.feature-content p {
+  color: rgba(19, 18, 18, 0.897);
+  font-weight: 500; }
+
+/*categorias*/
+.top-categorias {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem; }
+
+.container-categorias {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem; }
+
+.card-categorias {
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  gap: 2rem; }
+
+.categorias-celulares {
+  background-image: linear-gradient(#00000080, #00000080), url(../img/iphone14.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.categorias-notebooks {
+  background-image: linear-gradient(#00000080, #00000080), url(../img/macbook-pro.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.categorias-gaming {
+  background-image: linear-gradient(#00000080, #00000080), url(../img/teclado-rayzer.jpeg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.categorias-perifericos {
+  background-image: linear-gradient(#00000020, #00000020), url(../img/auriculares.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat; }
+
+.card-categorias p {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: capitalize;
+  position: relative; }
+
+.card-categorias p::after {
+  content: '';
+  width: 2.5rem;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -1rem;
+  left: 50%;
+  transform: translate(-50%, 50%); }
+
+.card-categorias span {
+  font-size: 1.5rem;
+  color: white;
+  cursor: pointer; }
+
+.card-categorias span:hover {
+  color: #07f3b8; }
+
+/***** top productos***/
+.top-productos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 2rem; }
+
+.container-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem; }
+
+.container-opciones span {
+  color: #212529;
+  background-color: white;
+  padding: .7rem 3rem;
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  border-radius: 2rem;
+  cursor: pointer; }
+
+.container-opciones span:hover {
+  background-color: gray; }
+
+.container-opciones span.active {
+  background-color: gray; }
+
+/*** productos****/
+.container-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3rem; }
+
+.card-productos {
+  background-color: white;
+  padding: 2rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer; }
+
+.container-img {
+  position: relative; }
+
+.container-img img {
+  width: 100%; }
+
+.container-img .discount {
+  position: absolute;
+  left: 0;
+  background-color: #212529;
+  color: white;
+  padding: 2px 1.2rem;
+  border-radius: 1rem;
+  font-size: 1.2rem; }
+
+.card-productos:hover .discount {
+  background-color: #157ca5; }
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  position: absolute;
+  top: 0;
+  right: -3rem;
+  z-index: -1;
+  transition: all .4s ease; }
+
+.button-group span {
+  border: 1px solid #212529;
+  padding: .8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .4s ease; }
+
+.button-group span:hover {
+  background-color: #157ca5; }
+
+.button-group span:hover i {
+  color: white; }
+
+.button-group span i {
+  font-size: 1.5rem;
+  color: #212529; }
+
+.card-productos:hover .button-group {
+  z-index: 0;
+  right: -1rem; }
+
+.content-card-producto {
+  display: grid;
+  justify-items: center;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 500px;
-  gap: 10px 10px;
-  padding: 20px;
-  grid-template-areas: ". ." ". ."; }
+  grid-template-rows: repeat(4, min-content);
+  row-gap: 1rem; }
 
-.container-imagenes {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 20px;
-  box-shadow: 5px 8px 12px; }
+.stars {
+  grid-row: 1/2;
+  grid-column: 1/-1; }
 
-.container-caja {
-  display: flex;
-  position: relative; }
+.stars i {
+  font-size: 1.3rem;
+  color: #212529; }
 
-.container-titulo {
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 50%;
-  left: 40%;
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; }
-
-.expo-prod {
-  display: flex;
-  flex-direction: column;
-  margin: 0px;
-  padding: 15px; }
-
-.expo-img {
-  margin: 0;
-  padding: 0px;
-  width: 50%;
-  height: 50%;
-  object-fit: cover;
-  border-radius: 5%;
-  position: relative; }
-
-.expo-titulo {
-  display: flex;
-  text-align: justify;
-  position: absolute;
-  bottom: 70%;
-  color: white;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  top: 5%;
-  left: 55%;
-  font-size: 3rem;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700; }
-
-.text {
-  font-size: 25px;
-  text-align: center;
-  align-items: center;
+.content-card-producto h3 {
+  grid-row: 2/3;
+  grid-column: 1/-1;
   font-weight: 400;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  cursor: pointer; }
+
+.content-card-producto h3:hover {
+  color: #07f3b8; }
+
+.add-cart {
+  justify-self: start;
+  border: 2px solid #212529;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all .4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.add-cart:hover {
+  background-color: rgba(131, 48, 0, 0.308); }
+
+.add-cart i {
+  font-size: 1.5rem;
+  color: #157ca5; }
+
+.add-cart:hover i {
+  color: white; }
+
+.content-card-producto .prince {
+  justify-self: end;
+  align-self: center;
+  font-size: 1.7rem;
+  font-weight: 600; }
+
+.content-card-producto .price span {
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: line-through;
+  color: gray;
+  margin-left: .5rem; }
+
+.m-main {
   font-family: "Roboto", sans-serif; }
 
+.contacto {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(../img/puente.jpg);
+  background-size: cover; }
+
+.contacto .contenido {
+  max-width: 800px;
+  text-align: center; }
+
+.contacto .contenido h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: white; }
+
+.contacto .contenido p {
+  font-weight: 500;
+  color: white; }
+
+.contenedor {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; }
+
+.contenedor .contactinfo {
+  width: 50%;
+  display: flex;
+  flex-direction: column; }
+
+.contenedor .contactinfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex; }
+
+.contenedor .contactinfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 20px; }
+
+.contenedor .contactinfo .box .text {
+  display: flex;
+  margin-left: 30px;
+  font-size: 20px;
+  color: white;
+  flex-direction: column;
+  font-weight: 300px; }
+
+.contenedor .contactinfo .box .text h3 {
+  font-weight: 700;
+  color: #07f3b8; }
+
+.contactform {
+  width: 40%;
+  padding: 40px;
+  background-color: white; }
+
+.contactform h2 {
+  font-size: 40px;
+  color: rgba(19, 18, 18, 0.897);
+  font-weight: 600; }
+
+.contactform .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px; }
+
+.contactform .inputbox input,
+.contactform .inputbox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid rgba(19, 18, 18, 0.897);
+  outline: none;
+  resize: none; }
+
+.contactform .inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: rgba(19, 18, 18, 0.897); }
+
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span,
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid span {
+  color: #07f3b8;
+  font-size: 12px;
+  transform: translateY(-20px); }
+
+.contactform .inputbox input[type="submit"] {
+  width: 100px;
+  background-color: #157ca5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px; }
+
 .bg-footer {
-  background-color: #2c0808;
-  padding: 20px;
+  background-color: #212529;
+  padding: 10px;
   display: flex;
   justify-content: space-around;
   align-items: baseline; }

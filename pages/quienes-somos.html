@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../img/logo1.jpeg" type="image/x-icon">
     <title>Nosotros</title>
@@ -12,24 +13,83 @@
 
 <body>
     <header class="df-header">
-        <div class="logo">
-            <img class="logo-img" src="/img/logo1.jpeg">
-            <p class="CodoACodo"> Mobile Stop </p>
-        </div>
-        <nav>
-            <ul class="df-ul">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="quienes-somos.html">Nosotros</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="ayuda.html">Ayuda</a></li>
+      <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img class="logo-img" src="../img/logo1.jpeg" alt="logo de celular con fondo amarillo" width="150px" height="100px">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="productos.html">Productos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Ver mas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="quienes-somos.html">Sobre nosotros</a></li>
+                  <li><a class="dropdown-item" href="ayuda.html">Ayuda</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
 
     <main>
-
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active c-item">
+                <img src="../img/quienes-somos.jpg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption mt-4 d-none d-md-block">
+                  <h5 class="titulo-1 display-1 fw-bolder text-capitalize text-white c-titulo">Nuestro Equipo</h5>
+                  <p class="parrafo mt-5 fs-3 text-uppercase fw-bolder text-white c-text">Nuestra promesa consiste en trabajar con responsabilidad
+                    como una empresa líder a nivel nacional.</p>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="../img/imagen2.jpeg" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption mt-4 d-none d-md-block">
+                  <h5 class="titulo-2 display-1 fw-bolder text-capitalize c-titulo">Nuestra misión y nuestro enfoque</h5>
+                  <p class="mt-5 fs-3 text-uppercase c-text">Mobilestop sigue una filosofía empresarial simple: dedicar su talento y sus conocimientos a crear productos y servicios superiores que contribuyan a una mejor sociedad global. Para lograrlo, establece un alto valor en sus personas y tecnologías.</p>
+                </div>
+              </div>
+              <div class="carousel-item c-item">
+                <img src="../img/fondo.avif" class="d-block w-100 c-img" alt="...">
+                <div class="carousel-caption mt-4 d-none d-md-block">
+                  <h5 class="titulo-3 display-1 fw-bolder text-capitalize c-titulo">El arte de la expresión</h5>
+                  <p class="mt-5 fs-3 text-uppercase c-text">La forma en que nos expresamos dice mucho sobre quiénes somos. Por eso, siempre encontramos la manera de mostrarnos como nosotros mismos en nuestros trabajos y diseños con audacia, franqueza, estilo y alegría.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </main>
 
     <footer class="bg-footer">
@@ -47,6 +107,7 @@
         </div>
         <script src="https://kit.fontawesome.com/a954ad0397.js" crossorigin="anonymous"></script>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 
 </html>

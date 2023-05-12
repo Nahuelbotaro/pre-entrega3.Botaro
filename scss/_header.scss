@@ -1,49 +1,6 @@
-
-
-
-.df-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: $colorprincipal;
-    padding: 5px;
-    font-family: $fontsource;
-   
-    .logo-img {
-        width: 150px;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        .logo p {
-            margin: 10px;
-            font-family: $fontsource;
-        }
-    }
-    .df-ul {
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        list-style: none;
-       
-    
-    }
-    
-    .df-ul li {
-        text-decoration: none;
-        margin: 20px;
-        font-family: 'Source Serif Pro', serif;
-       
-    }
-    
-    .CodoACodo {
-        font-size: 30px;
-        color:$colorterciario;
-        font-family: 'Source Serif Pro', serif;
-        font-weight: 500;
-    }
+.logo-img{
+    margin: 0px;
+    padding: 0px;
+    width: 100px;
+    height: 100px;
 }
-
